@@ -3,10 +3,27 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { BrowserRouter } from 'react-router-dom';
+import ScrollTop from './component/Scrolltop';
+
+const value :number = 96;
+
+function reducer(state = value){
+  return state
+}
+
+let store = createStore(reducer)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <BrowserRouter>
+      <ScrollTop />
+        <App />
+      </BrowserRouter>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,38 +1,299 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Source+Sans+Pro&family=Source+Serif+4&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hind Siliguri", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  -ms-overflow-style: none;
+  background: #161616;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar {
+  width: 3px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #ffd700;
+  text-decoration: none;
+}
+.navbar li:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+.navbar li:hover:after {
+  width: 100%;
+  background: #ffd700;
+}
+
+#tsparticles {
+  position: relative;
+  z-index: -10;
+}
+
+h1,
+h2,
+h3,
+p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ========= Navbar ========== */
+.navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  position: fixed;
+}
+.change_navbar {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid white;
+  position: fixed;
+  z-index: 10;
+  background: #191919b8;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.navbar_logo,
+.change_navbar .navbar_logo {
+  width: 28%;
+}
+.navbar_logo a,
+.change_navbar .navbar_logo a {
+  color: white;
+  pointer-events: none;
+  margin-left: 8%;
+}
+.navbar_btn,
+.change_navbar .navbar_btn {
+  width: 20%;
+  height: 35px;
+  background: none;
+  font-size: 18px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+.navbar_btn:hover {
+  border: 1px solid greenyellow;
+}
+.navbar ul,
+.change_navbar ul {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+.navbar ul li,
+.change_navbar ul li {
+  padding: 0% 4%;
+}
+.navbar ul li a,
+.change_navbar ul li a {
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
+/* ========= Home =========== */
+.Home-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15%;
+}
+.Home-title h1 {
+  font-size: 6vw;
+  line-height: 110%;
+  font-family: "Poiret One", cursive;
+}
+.Home-title2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 17%;
+}
+.Home-title2 h2 {
+  font-size: 18px;
+  padding: 1%;
+  color: beige;
+}
+#Welcome {
+  position: relative;
+  right: 5%;
+  background: linear-gradient(to right, #ff9999, #99ccff, #99ffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#My {
+  position: relative;
+  left: 5%;
+  background: linear-gradient(to right, #ff9999, #ffff99, #99ccff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#January {
+  font-size: 5vw;
+  background: linear-gradient(to right, #cc99ff, #ffff99, #ff99cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title-box {
+  position: absolute;
+  z-index: -1;
+  top: 23%;
+  left: 35%;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+/* ========== About =========== */
+.About {
+  width: 100%;
+  margin-top: 15%;
+  overflow: hidden;
+}
+.transition-text {
+  width: 200%;
+  display: flex;
+  position: relative;
+  left: -20%;
+  border-top: 1px solid white;
+}
+.transition-text p,
+.transition-text h4 {
+  font-size: 28px;
+  font-weight: normal;
+  padding: 0px 10px;
+  color: ghostwhite;
+}
+.transition-text p {
+  color: greenyellow;
+}
+.transition-text2 {
+  width: 200%;
+  display: flex;
+  position: relative;
+  left: -7%;
+  border-bottom: 1px solid white;
+}
+.transition-text2 p,
+.transition-text2 h4 {
+  font-size: 28px;
+  font-weight: normal;
+  padding: 0px 10px;
+  color: ghostwhite;
+}
+.transition-text2 h4 {
+  color: greenyellow;
+}
+.About-Me {
+  width: 100%;
+  text-align: center;
+}
+.About-Me h1 {
+  font-size: 40px;
+  padding-top: 5%;
+}
+.About-Me .profile {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10% 0%;
+}
+.About-Me .profile-img img {
+  border-radius: 50%;
+}
+.About-Me .profile div {
+  width: 30%;
+}
+.About-Me .profile-text {
+  width: 100%;
+  text-align: left;
+}
+.About-Me .profile-text div {
+  width: 100%;
+  display: flex;
+  padding: 2% 0%;
+}
+.About-Me .profile-text p {
+  width: 20%;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+.About-Me .profile-text h5 {
+  width: 3%;
+  font-size: 18px;
+  color: white;
+}
+.About-Me .profile-text h6 {
+  width: 75%;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+/* =========== Portfolio =========== */
+.Portfolio {
+  width: 100%;
+}
+.Portfolio h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 3vw;
+}
+.slide {
+  width: 12%;
+  margin: auto;
+  text-align: center;
+}
+.slide-text {
+  width: 100%;
+  text-align: left;
+}
+.slide-text h1 {
+  text-align: center;
+  padding: 2% 0%;
+}
+.slide-text p {
+  width: 100%;
+  padding: 1.5% 0%;
 }
