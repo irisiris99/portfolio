@@ -8,7 +8,7 @@ import { createStore } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollTop from './component/Scrolltop';
 
-const value :number = 96;
+const value :number = 0;
 
 function reducer(state = value){
   return state
