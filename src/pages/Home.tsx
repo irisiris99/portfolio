@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from 'react';
+import React, { Component, useEffect, useRef, useState } from 'react';
 import Navbar from '../component/navbar';
 import Particles from '../component/Particles';
 import Slider from '../component/Slider';
@@ -15,6 +15,8 @@ function Home() {
     </div>
   );
 }
+
+
 
 function HomeContent () {
   return (
@@ -111,13 +113,13 @@ function AboutContent () {
               <h6>　경기도 안산시 단원구</h6>
             </div>
             <div>
-              <h3># 긍정적인 사고</h3>
+              <h3># 집중력 ( Concentration  )</h3>
             </div>
             <div>
-              <h3># 문제해결 능력</h3>
+              <h3># 긍정적인 사고 ( Positive Thought )</h3>
             </div>
             <div>
-              <h3># 커뮤니케이션 능력</h3>
+              <h3># 문제해결 능력 ( Problem-Solving Ability )</h3>
             </div>
           </div>
         </div>

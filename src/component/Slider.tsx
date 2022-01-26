@@ -18,7 +18,7 @@ const Button = styled.button`
   padding: 0.5em 2em;
   color: coral;
   border-radius: 28px;
-	margin: 5% 15%;
+	margin: 1% 15%;
 	cursor: pointer;
   &:hover {
     transition: all 0.3s ease-in-out;
@@ -64,19 +64,25 @@ export default function Slider() {
 				<div className="slide">
 					<Slide img={img1} />
 					<div className="slide-text">
-						<h1>Vacation House - Blanc -</h1>
+						<div className="slide-title-github">
+							<h1>Vacation House - Blanc -</h1>
+							<a href="https://irisiris99.github.io/blanc/" target="_blank"><img src="imgs/github.png" /></a>
+						</div>
 						<p>Black & White 디자인의 웹 사이트로 해외 바다 근처의 펜션 하우스를 이미지해서 제작했습니다.</p>
 						<p>주 고객층이 20대~40대의 젊은 여성 / 관광목적의 여행단체인 것을 고려하여 직관적이고 빠른 펜션 소개를 위해 설명을 최대한 줄이고, 펜션 내/외부 이미지 위주로 제작하였습니다</p>
-						<p>TypeScript / React 개발 환경에 조금 더 익숙해지고 이해하기 위해 다양한 기능을 사용했습니다.</p>
+						<p>TypeScript / React 개발 환경에 익숙해지기 위해 다양한 기능을 알아보고 사용했습니다.</p>
 						<p><b>《 이번 프로젝트 작업 과정을 통해 얻은 경험 및 지식 》</b></p>
-						<p>※ useState, useEffect 를 활용해 Scroll 값 변화에 따라 이동하는 Background / Font 구현 <br/>※ framer-motion을 통한 Page Component 이동 시 Animation 효과 구현 <br />※ React-Router-Dom 으로 Page Components 관리 <br/>※ useRef로 지정된 Button onClick시 특정 HTML 태그 위치로 이동하는 기능 구현 <br />※ Redux 배열 형식의 State 관리 및 사용경험 </p>
+						<p>※ useState, useEffect 를 활용해 Scroll 값 변화에 따라 이동하는 Background / Font 구현 경험<br/>※ framer-motion을 통한 Page Component 이동 시 Animation 효과 구현 경험<br />※ React-Router-Dom 으로 Page Components 관리 경험<br/>※ useRef로 지정된 Button onClick시 특정 HTML 태그 위치로 이동하는 기능 구현 경험<br />※ Redux 배열 형식의 State 관리 경험 </p>
 						<h3>#HTML　#CSS　#TypeScript　#React　#React-Hooks　#Redux　#React-Router-Dom</h3>
 					</div>
 				</div>
 				<div className="slide">
 					<Slide img={img2} />
 					<div className="slide-text">
-						<h1>Benz Clone Coding Website</h1>
+						<div className="slide-title-github">
+							<h1>Benz Clone Coding Website</h1>
+							<a href="https://irisiris99.github.io/Benz/" target="_blank"><img src="imgs/github.png" /></a>
+						</div>
 						<p>Bezn Official Website를 참고하여 트렌디하고 직관적인 UI Design으로 리모델링 제작했습니다.</p>
 						<p>React 를 이해하고 개발환경 변화에 적응하는 것에 중점을 두었습니다.<br/>◎ 사용된 Background / Image 들은 Photoshop 으로 작업했습니다.</p>
 						<p><b>《 이번 프로젝트 작업 과정을 통해 얻은 경험 및 지식 》</b></p>
@@ -87,7 +93,10 @@ export default function Slider() {
 				<div className="slide">
 					<Slide img={img3} />
 					<div className="slide-text">
-						<h1>Aimer Clone Coding Website</h1>
+						<div className="slide-title-github">
+							<h1>Aimer Clone Coding Website -</h1>
+							<a href="https://irisiris99.github.io/Aimer/" target="_blank"><img src="imgs/github.png" /></a>
+						</div>
 						<p>개인적으로 좋아하는 가수 Aimer 의 Official Website를 리모델링 제작했습니다.</p>
 						<p>◎ 기존 Official Website를 최근 웹 디자인 트렌드중 하나인 Simple & Minimal 느낌에 12월 겨울 분위기에 맞게 제작했습니다. </p>
 						<p><b>《 이번 프로젝트 작업 과정을 통해 얻은 경험 및 지식 》</b></p>
@@ -98,12 +107,15 @@ export default function Slider() {
 				<div className="slide">
 					<Slide img={img4} />
 					<div className="slide-text">
-						<h1>Vacation House - Blanc -</h1>
-						<p>Black & White 디자인의 웹 사이트로 해외 바다 근처의 펜션 하우스를 이미지해서 제작했습니다.</p>
-						<p>주 고객층이 20대~40대의 젊은 여성 / 관광목적의 여행단체인 것을 고려하여 직관적이고 빠른 펜션 소개를 위해 설명을 최대한 줄이고, 펜션 내/외부 이미지 위주로 제작하였습니다</p>
-						<p>TypeScript / React 개발 환경에 조금 더 익숙해지고 이해하기 위해 다양한 기능을 사용했습니다.</p>
-						<p>※ useState, useEffect 를 활용해 Scroll 값 변화에 따라 이동하는 Background / Font 구현 <br/>※ framer-motion을 통한 Page Component 이동 시 Animation 효과 구현 <br />※ React-Router-Dom 으로 Page Components 관리 <br/>※ useRef로 지정된 Button onClick시 특정 HTML 태그 위치로 이동하는 기능 구현 <br />※ Redux를 통한 State 관리 </p>
-						<h3>#HTML　#CSS　#TypeScript　#React　#React-Hooks　#Redux　#React-Router-Dom</h3>
+						<div className="slide-title-github">
+							<h1>Vanila JavaScript To-Do-List -</h1>
+							<a href="https://irisiris99.github.io/To-Do-List/" target="_blank"><img src="imgs/github.png" /></a>
+						</div>
+						<p>JavaScript를 조금 더 깊게 이해하기 위해 작업한 프로젝트 입니다.</p>
+						<p>◎ NomadCoder JS 강의를 통해 기능을 이해 & 구현하며 작업을 진행했습니다.</p>
+						<p><b>《 이번 프로젝트 작업 과정을 통해 얻은 경험 및 지식 》</b></p>
+						<p>※ localStorage에 input값과 함께 저장된 username을 H1 태그에 나타내주는 Login 기능 구현 경험<br/>※ Data Object를 활용해 현재 Hours, Minutes, Seconds 를 1초마다 나타내주는 Clock기능 구현 경험<br />※ Math.random + Math.floor을 통해 Random Background Image / Random 명언 기능 구현 경험<br/>※ addEventListener, JSON.stringify 등의 다양한 기능과 함수를 이용한 To-Do-List 등록/삭제 구현 경험<br />※ openweathermap의 날씨 API를 받아와서 나타내주는 기능 구현 경험</p>
+						<h3>#HTML　#CSS　#JavaScript</h3>
 					</div>
 				</div>
       </SliderContainer>
