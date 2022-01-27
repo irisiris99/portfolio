@@ -31,11 +31,12 @@ a {
   font-size: 20px;
 }
 
-a:hover {
-  color: #ffd700;
+a:hover,
+.navbar ul button p:hover {
+  color: gray;
   text-decoration: none;
 }
-.navbar li:after {
+.navbar ul button p:after {
   content: "";
   display: block;
   margin: auto;
@@ -44,9 +45,9 @@ a:hover {
   background: transparent;
   transition: width 0.5s ease, background-color 0.5s ease;
 }
-.navbar li:hover:after {
+.navbar ul button p:hover:after {
   width: 100%;
-  background: #ffd700;
+  background: gray;
 }
 
 #tsparticles {
@@ -70,28 +71,16 @@ p {
   align-items: center;
   border-bottom: 1px solid white;
   position: fixed;
-}
-
-.change_navbar {
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid white;
-  position: fixed;
   z-index: 10;
-  background: #191919b8;
-  backdrop-filter: saturate(180%) blur(20px);
+  background: transparent;
+  backdrop-filter: saturate(180%) blur(15px);
 }
 
-.navbar_logo,
-.change_navbar .navbar_logo {
+.navbar_logo {
   width: 28%;
 }
 
-.navbar_logo a,
-.change_navbar .navbar_logo a {
+.navbar_logo a {
   color: white;
   pointer-events: none;
   margin-left: 8%;
@@ -179,17 +168,24 @@ p {
   justify-content: flex-end;
 }
 
-.navbar ul li,
-.change_navbar ul li {
+.navbar ul button,
+.change_navbar ul button {
   padding: 0% 4%;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.navbar ul li a,
-.change_navbar ul li a {
+.navbar ul button p,
+.change_navbar button p {
   font-size: 16px;
+  transition: 0.2s ease-in;
 }
 
 /* ========= Home =========== */
+.Home {
+  width: 100%;
+}
 .Home-title {
   width: 100%;
   display: flex;
@@ -209,6 +205,7 @@ p {
   display: flex;
   justify-content: center;
   padding-left: 17%;
+  padding-bottom: 15%;
 }
 
 .Home-title2 h2 {
@@ -260,7 +257,6 @@ p {
 /* ========== About =========== */
 .About {
   width: 100%;
-  margin-top: 15%;
   overflow: hidden;
 }
 
@@ -307,12 +303,11 @@ p {
 .About-Me {
   width: 100%;
   text-align: center;
-  padding: 5% 0%;
+  padding: 10% 0%;
 }
 
 .About-Me h1 {
   font-size: 3vw;
-  padding-top: 7%;
   text-shadow: 5px 5px 5px gray;
 }
 
@@ -321,7 +316,6 @@ p {
   display: flex;
   justify-content: center;
   padding: 5% 0%;
-  margin-bottom: 5%;
 }
 
 .About-Me .profile-img img {

@@ -2,33 +2,24 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-	const HomeRef = useRef<HTMLDivElement>(null);
-  const onHomeClick = () => {
-    HomeRef.current?.scrollIntoView({ behavior: 'smooth' });
-      };
-  
-  const AboutRef = useRef<HTMLDivElement>(null);
-  const onAboutClick = () => {
-    AboutRef.current?.scrollIntoView({ behavior: 'smooth' });
-      };
 
-  const PortRef = useRef<HTMLDivElement>(null);
-  const onPortClick = () => {
-    PortRef.current?.scrollIntoView({ behavior: 'smooth' });
-      };
-	const ContactRef = useRef<HTMLDivElement>(null);
-	const onContactClick = () => {
-		ContactRef.current?.scrollIntoView({ behavior: 'smooth' });
+	const homeRef = useRef<HTMLDivElement>(null);
+	const onHomeClick = () => {
+		homeRef.current?.scrollIntoView({ behavior: 'smooth' });
 			};
-	const [scrollPosition, setScrollPosition] = useState(0);
-  const updateScroll = () => {
-      setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-  }
-  useEffect(()=>{
-      window.addEventListener('scroll', updateScroll);
-  });
+	const aboutRef = useRef<HTMLDivElement>(null);
+	const onAboutClick = () => {
+		aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+			};
+	const portRef = useRef<HTMLDivElement>(null);
+	const onPortClick = () => {
+		portRef.current?.scrollIntoView({ behavior: 'smooth' });
+			};
+	const contactRef = useRef<HTMLDivElement>(null);
+	const onContactClick = () => {
+		contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+			};
   return (
-    <div className={scrollPosition < 100 ? "navbar" : "change_navbar"}>
 			<div className="navbar">
 				<div className="navbar_logo">
 					<a href="#">KimMeyongRae</a>
@@ -48,13 +39,12 @@ function Navbar() {
             </div>
         </a>
 				<ul>
-					<li><a href="#" onClick={onHomeClick}>HOME</a></li>
-					<li><a href="#" onClick={onAboutClick}>ABOUT</a></li>
-					<li><a href="#" onClick={onPortClick}>PORTFOLIO</a></li>
-					<li><a href="#" onClick={onContactClick}>CONTACT</a></li>
+					<button onClick={onHomeClick}><p>HOME</p></button>
+					<button onClick={onAboutClick}><p>ABOUT</p></button>
+					<button onClick={onPortClick}><p>PORTFOLIO</p></button>
+					<button onClick={onContactClick}><p>CONTACT</p></button>
 				</ul>
     	</div>
-		</div>
   )
 }
 
