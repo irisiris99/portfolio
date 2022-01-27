@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -8,9 +8,12 @@ import { createStore } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
 import ScrollTop from './component/Scrolltop';
 
-const value :number = 0;
+// About
+const age:string = '26 Years';
+const nationality:string = 'South Korea';
+const adress:string = '경기도 안산시 단원구';
 
-function reducer(state = value){
+function reducer(state = [age, nationality, adress]){
   return state
 }
 

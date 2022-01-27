@@ -91,6 +91,10 @@ const AboutContent = forwardRef<any>((props, ref) => {
 		};
 	}, []);
 
+  const age = useSelector((state)=>state[0])
+  const nationality = useSelector((state)=>state[1])
+  const adress = useSelector((state)=>state[2])
+
   return (
     <div className="About">
       <div className="transition-text" style={{
@@ -142,17 +146,17 @@ const AboutContent = forwardRef<any>((props, ref) => {
             <div>
               <p>Age</p>
               <h5>:</h5>
-              <h6>　26 Years ( 1997. 02. 15 )</h6>
+              <h6>　{age} ( 1997. 02. 15 )</h6>
             </div>
             <div>
               <p>Nationality</p>
               <h5>:</h5>
-              <h6>　South Korea</h6>
+              <h6>　{nationality}</h6>
             </div>
             <div>
               <p>Aderss</p>
               <h5>:</h5>
-              <h6>　경기도 안산시 단원구</h6>
+              <h6>　{adress}</h6>
             </div>
             <div>
               <h3># 집중력 ( Concentration  )</h3>
