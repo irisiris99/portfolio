@@ -13,7 +13,12 @@ const age:string = '26 Years';
 const nationality:string = 'South Korea';
 const adress:string = '경기도 안산시 단원구';
 
-function reducer(state = [age, nationality, adress]){
+// Contact
+const phone:string = '0 1 0 - 6 8 5 0 - 5 6 0 7';
+const github:string = 'https://www.github.com/irisiris99';
+const email:string = 'd i v a 0 3 1 1 7 @ n a v e r . c o m';
+
+function reducer(state = [age, nationality, adress, phone, github, email]){
   return state
 }
 

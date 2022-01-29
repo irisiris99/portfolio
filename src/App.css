@@ -231,20 +231,25 @@ p {
 }
 
 #January {
-  font-size: 5vw;
+  font-size: 6vw;
   background: linear-gradient(to right, #cc99ff, #ffff99, #ff99cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .title-box {
+  width: 25%;
   position: absolute;
   z-index: -1;
-  top: 23%;
+  top: 12vw;
   left: 36%;
   border-radius: 50%;
   overflow: hidden;
   animation: spin 4s linear infinite;
+}
+
+.title-box img {
+  width: 100%;
 }
 
 @keyframes spin {
@@ -261,16 +266,16 @@ p {
 }
 
 .transition-text {
-  width: 200%;
+  width: 450%;
   display: flex;
   position: relative;
-  left: -20%;
+  left: -110%;
   border-top: 1px solid white;
 }
 
 .transition-text p,
 .transition-text h4 {
-  font-size: 28px;
+  font-size: 1.5vw;
   font-weight: normal;
   padding: 0px 10px;
   color: ghostwhite;
@@ -281,7 +286,7 @@ p {
 }
 
 .transition-text2 {
-  width: 200%;
+  width: 450%;
   display: flex;
   position: relative;
   left: -7%;
@@ -290,7 +295,7 @@ p {
 
 .transition-text2 p,
 .transition-text2 h4 {
-  font-size: 28px;
+  font-size: 1.5vw;
   font-weight: normal;
   padding: 0px 10px;
   color: ghostwhite;
@@ -312,29 +317,34 @@ p {
 }
 
 .About-Me .profile {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 5% 0%;
 }
 
-.About-Me .profile-img img {
-  border-radius: 50%;
+.About-Me .profile div {
+  width: 40%;
 }
 
-.About-Me .profile div {
-  width: 30%;
+.About-Me .profile-img img {
+  width: 60%;
+  border-radius: 50%;
 }
 
 .About-Me .profile-text {
   width: 100%;
-  text-align: left;
+  text-align: start;
+  position: relative;
+  left: 5%;
 }
 
 .About-Me .profile-text div {
   width: 100%;
   display: flex;
-  padding: 2% 0%;
+  padding: 1% 0%;
 }
 
 .About-Me .profile-text p {
@@ -356,6 +366,13 @@ p {
   font-weight: normal;
   color: white;
 }
+.About-Me .profile-text h3 {
+  width: 100%;
+}
+
+.About-Me .profile-text .padding-top {
+  padding-top: 5%;
+}
 
 /* =========== Portfolio =========== */
 .Portfolio {
@@ -371,7 +388,7 @@ p {
 }
 
 .slide {
-  width: 10%;
+  width: 11%;
   margin: auto;
   text-align: center;
 }
@@ -384,7 +401,11 @@ p {
 .slide-text h1 {
   font-size: 2vw;
   text-align: center;
-  padding: 2% 0%;
+  padding: 5% 0%;
+}
+
+.slide-text h3 {
+  padding: 3% 0%;
 }
 
 .slide-text p {
@@ -406,4 +427,233 @@ p {
 
 .slide-title-github a:hover {
   opacity: 0.8;
+}
+
+/* ============ Contact =========== */
+.contact-title h1 {
+  text-shadow: 3px 3px 4px blueviolet;
+}
+.contact-icons {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icons div {
+  width: 30%;
+  padding: 10% 0%;
+  text-align: center;
+}
+.contact-icons div img {
+  width: 10%;
+}
+
+.contact-icons div p {
+  font-size: 1.7vw;
+  text-shadow: 2px 2px 4px plum;
+  padding: 5% 0%;
+}
+
+.contact-end {
+  width: 100%;
+}
+
+.contact-end h2 {
+  font-size: 2.5vw;
+  padding-bottom: 5%;
+  text-align: center;
+  text-shadow: 3px 3px 4px grey;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1025px) {
+  .delete {
+    display: none;
+  }
+
+  .navbar_logo {
+    display: none;
+  }
+
+  .navbar__availability {
+    position: absolute;
+    left: 5%;
+  }
+
+  #Home-content {
+    padding: 10% 0%;
+  }
+
+  .Home-title h1 {
+    font-size: 10vw;
+  }
+  .Home-title2 {
+    position: relative;
+    left: 0%;
+    padding: 5% 0%;
+  }
+
+  .title-box {
+    position: absolute;
+    top: 26vw;
+  }
+
+  /* ============ About ========== */
+  .About-Me {
+    padding: 15% 0%;
+  }
+
+  .About-Me div h1 {
+    font-size: 6vw;
+  }
+
+  .About-Me .profile {
+    width: 100%;
+    margin: 0;
+    padding: 15% 0%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .About-Me .profile-text {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    left: -1.5%;
+    text-align: center;
+  }
+
+  .About-Me .profile-text div p,
+  .About-Me .profile-text div h5 {
+    display: none;
+  }
+
+  .About-Me .profile-text div h6 {
+    width: 100%;
+    font-size: 3vw;
+    padding-top: 5%;
+  }
+
+  .About-Me .profile-text div h3 {
+    display: none;
+  }
+
+  .About-Me .profile-img {
+    padding-bottom: 10%;
+  }
+
+  /* ============ Portfolio ========= */
+  .Portfolio h1 {
+    font-size: 6vw;
+  }
+
+  .slide-title-github h1 {
+    font-size: 3.5vw;
+  }
+
+  /* ============ Slide ========== */
+  .slide {
+    width: 16%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #Home-content {
+    padding: 15% 0%;
+    margin: 0;
+  }
+
+  .Home-title h1 {
+    font-size: 50px;
+    padding: 2% 0%;
+  }
+
+  #Welcome {
+    position: relative;
+    left: 0%;
+  }
+  #My {
+    position: relative;
+    left: 0%;
+  }
+  #January {
+    position: relative;
+    left: 0%;
+  }
+
+  .title-box {
+    display: none;
+  }
+
+  /* ========== About ========== */
+  .About-Me div h1 {
+    font-size: 45px;
+  }
+
+  .About-Me .profile {
+    width: 100%;
+  }
+
+  .About-Me div .profile-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .About-Me div .profile-text {
+    width: 100%;
+  }
+
+  .About-Me div .profile-img img {
+    width: 110%;
+  }
+
+  .About-Me .profile-text div h6 {
+    min-width: 300px;
+    font-size: 24px;
+  }
+
+  /* ======= Portfolio ========= */
+
+  .Portfolio div h1 {
+    font-size: 40px;
+  }
+
+  .slide-title-github {
+    padding: 5% 0%;
+  }
+
+  .slide-title-github h1 {
+    font-size: 16px;
+  }
+
+  /* ======== Contact ======== */
+
+  .contact-title {
+    padding: 10% 0%;
+  }
+
+  .contact-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-icons div {
+    width: 100%;
+  }
+
+  .contact-icons div img {
+    width: 10%;
+  }
+
+  .contact-icons div p {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .contact-end h2 {
+    font-size: 18px;
+  }
 }

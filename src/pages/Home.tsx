@@ -55,6 +55,7 @@ function Home() {
       <AboutContent ref={aboutRef}/>
       <PortfolioContent ref={portRef}/>
       <Slider />
+      <ContactContent ref={contactRef}/>
     </div>
   );
 }
@@ -62,7 +63,7 @@ function Home() {
 
 const HomeContent = forwardRef<any>((props, ref) => {
   return (
-    <div className="Home" ref={ref}>
+    <div id="Home-content" className="Home" ref={ref}>
       <div className="Home-title">
         <h1 id="Welcome">WELCOME TO</h1>
         <h1 id="My">MY PORTFOLIO</h1>
@@ -112,8 +113,15 @@ const AboutContent = forwardRef<any>((props, ref) => {
         <h4>KIM MYEONG RAE</h4>
         <p>2022 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
+        <p>2022 PORTFOLIO</p>
+        <h4>KIM MYEONG RAE</h4>
+        <p>2022 PORTFOLIO</p>
+        <h4>KIM MYEONG RAE</h4>
+        <p>2022 PORTFOLIO</p>
+        <h4>KIM MYEONG RAE</h4>
+        
       </div>
-      <div className="transition-text2" style={{
+      <div id="position-left" className="transition-text2" style={{
             transform : `translateX(-${position / 5}px)` ,
           }}>
         <p>2022 PORTFOLIO</p>
@@ -158,7 +166,7 @@ const AboutContent = forwardRef<any>((props, ref) => {
               <h5>:</h5>
               <h6>　{adress}</h6>
             </div>
-            <div>
+            <div className="padding-top">
               <h3># 집중력 ( Concentration  )</h3>
             </div>
             <div>
@@ -204,6 +212,15 @@ const PortfolioContent = forwardRef<any>((props, ref) => {
         <h4>MY PROJECTS</h4>
         <p>ABOUT ME</p>
         <h4>MY PROJECTS</h4>
+        <p>ABOUT ME</p>
+        <h4>MY PROJECTS</h4>
+        <p>ABOUT ME</p>
+        <h4>MY PROJECTS</h4>
+        <p>ABOUT ME</p>
+        <h4>MY PROJECTS</h4>
+        <p>ABOUT ME</p>
+        <h4>MY PROJECTS</h4>
+        
       </div>
       <div className="transition-text2" style={{
             transform : `translateX(-${position / 5}px)` ,
@@ -227,6 +244,96 @@ const PortfolioContent = forwardRef<any>((props, ref) => {
       </div>
       <div ref={ref}>
         <h1>MY PROJECTS</h1>
+      </div>
+    </div>
+  )
+});
+
+const ContactContent = forwardRef<any>((props, ref) => {
+
+  const phone = useSelector((state) => state[3])
+  const github = useSelector((state) => state[4])
+  const email = useSelector((state) => state[5])
+
+  const [position, setPosition] = useState(0);
+	function onScroll() {
+		setPosition(window.scrollY);
+	}
+	useEffect(() => {
+		window.addEventListener("scroll", onScroll);
+		return () => {
+			window.removeEventListener("scroll", onScroll);
+		};
+	}, []);
+  return (
+    <div className="Portfolio">
+      <div className="transition-text" style={{
+            transform : `translateX(${position / 5}px)` ,
+          }}>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+      </div>
+      <div className="transition-text2" style={{
+            transform : `translateX(-${position / 5}px)` ,
+          }}>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+        <p>MY PROJECT</p>
+        <h4>CONTACT</h4>
+      </div>
+      <div className="contact-title"ref={ref}>
+        <h1>KIM MEYONG RAE</h1>
+      </div>
+      <div className="contact-icons">
+        <div>
+          <img src="imgs/emailicon.png" alt="github" />
+          <p>{email}</p>
+        </div>
+        <div>
+          <img src="imgs/phoneicon.png" alt="Phone" />
+          <p>{phone}</p>
+        </div>
+        <div>
+          <img src="imgs/github2.png" alt="github" />
+          <p>{github}</p>
+        </div>
+      </div>
+      <div className="contact-end">
+        <h2>《　Thank for watching My Portfolio　》</h2>
       </div>
     </div>
   )
