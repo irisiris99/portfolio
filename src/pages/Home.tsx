@@ -177,6 +177,29 @@ const AboutContent = forwardRef<any>((props, ref) => {
             </div>
           </div>
         </div>
+        <div className="skill">
+          <div className="skill-box">
+            <img src="imgs/html.png" alt="HTML_icon" />
+            <p>HTML</p>
+          </div>
+          <div className="skill-box">
+            <img src="imgs/css.png" alt="CSS_icon" />
+            <p>CSS</p>
+          </div>
+          <div className="skill-box">
+            <img src="imgs/javascript.png" alt="JS_icon" />
+            <p>JavaScript</p>
+          </div>
+          <div className="skill-box">
+            <img src="imgs/typescript.png" alt="TS_icon" />
+            <p>TypeScript</p>
+          </div>
+          <div className="skill-box">
+            <img src="imgs/react.png" alt="React_icon" />
+            <p>React</p>
+          </div>
+          
+        </div>
       </div>
     </div>
 )});
