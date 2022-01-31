@@ -19,7 +19,7 @@ const Button = styled.button`
   padding: 0.5em 2em;
   color: coral;
   border-radius: 28px;
-	margin: 5% 10%;
+	margin: 1% 10%;
 	cursor: pointer;
   &:hover {
     transition: all 0.3s ease-in-out;

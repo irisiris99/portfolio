@@ -665,6 +665,14 @@ p {
     font-size: 16px;
   }
 
+  .slide-text p {
+    font-size: 14px;
+  }
+
+  .slide-text h3 {
+    font-size: 16px;
+  }
+
   /* ======== Contact ======== */
 
   .contact-title {

@@ -170,7 +170,7 @@ const AboutContent = forwardRef<any>((props, ref) => {
               <h3># 집중력 ( Concentration  )</h3>
             </div>
             <div>
-              <h3># 긍정적인 사고 ( Positive Thought )</h3>
+              <h3># 성장 가능성 ( Growth Potential )</h3>
             </div>
             <div>
               <h3># 문제해결 능력 ( Problem-Solving Ability )</h3>
