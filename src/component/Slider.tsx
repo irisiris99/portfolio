@@ -85,9 +85,9 @@ export default function Slider() {
 							<a href="https://irisiris99.github.io/Benz/" target="_blank"><img src="imgs/github.png" /></a>
 						</div>
 						<p className="delete" >Bezn Official Website를 참고하여 트렌디하고 직관적인 UI Design으로 리모델링 제작했습니다.</p>
-						<p className="delete" >React 를 이해하고 개발환경 변화에 적응하는 것에 중점을 두었습니다.<br/>◎ 사용된 Background / Image 들은 Photoshop 으로 작업했습니다.</p>
+						<p className="delete" >React 를 이해하고 개발환경 변화에 적응하는 것에 중점을 두었습니다.<br/>* 사용된 Background / Image 들은 Photoshop 으로 작업했습니다.</p>
 						<p><b>《 이번 프로젝트 작업 과정을 통해 얻은 경험 및 지식 》</b></p>
-						<p>※ React 에서 지켜야 할 다양한 문법에 대한 이해<br/>※ 함수형 Component와 클래스형 Component의 차이와 useState / props 의 사용법을 이해하고 적용해보기<br/>※ React 작업 폴더를 build 하고 github에 deploy하는 과정에서의 시행착오로 인해 얻은 경험과 지식<br/>※ Redux로 State 관리 경험</p>
+						<p>※ React 에서 지켜야 할 다양한 문법에 대한 이해<br/>※ 함수형 Component와 클래스형 Component의 차이와 useState / props 의 사용법을 이해하고 적용해보기<br/>※ React 작업 폴더를 build 하고 github에 deploy하는 과정에 대한 경험 및 이해<br/>※ Redux를 활용한 상태 관리 경험</p>
 						<h3>#HTML　#CSS　#JavaScript　#React　#Redux</h3>
 					</div>
 				</div>
@@ -95,13 +95,12 @@ export default function Slider() {
 					<Slide img={img3} />
 					<div className="slide-text">
 						<div className="slide-title-github">
-							<h1>Aimer Clone Coding Website -</h1>
+							<h1>Aimer Clone Coding Website</h1>
 							<a href="https://irisiris99.github.io/Aimer/" target="_blank"><img src="imgs/github.png" /></a>
 						</div>
-						<p className="delete" >개인적으로 좋아하는 가수 Aimer 의 Official Website를 리모델링 제작했습니다.</p>
-						<p className="delete" >◎ 기존 Official Website를 최근 웹 디자인 트렌드중 하나인 Simple & Minimal 느낌에 12월 겨울 분위기에 맞게 제작했습니다. </p>
+						<p className="delete" >개인적으로 좋아하는 가수인 Aimer 의 Official Website를 리모델링 제작했습니다.</p>
 						<p><b>《 이번 프로젝트 작업 과정을 통해 얻은 경험 및 지식 》</b></p>
-						<p>※ HTML5 / CSS3 마크업 능력 향상<br/>※ Responsive 작업 능력 향상<br/>※ Jqeury 숙련도 향상<br/>※ 깔끔하고 아름다운 UI Design 대한 고찰 경험</p>
+						<p>※ HTML5 / CSS3 마크업 능력 향상<br/>※ Responsive 작업 능력 향상<br/>※ Jqeury 숙련도 향상<br/>※ 깔끔한 UI Design 대한 고찰</p>
 						<h3>#HTML　#CSS　#JavaScript　#Jquery</h3>
 					</div>
 				</div>
@@ -109,7 +108,7 @@ export default function Slider() {
 					<Slide img={img4} />
 					<div className="slide-text">
 						<div className="slide-title-github">
-							<h1>Vanila JavaScript To-Do-List -</h1>
+							<h1>Vanila JavaScript To-Do-List</h1>
 							<a href="https://irisiris99.github.io/To-Do-List/" target="_blank"><img src="imgs/github.png" /></a>
 						</div>
 						<p className="delete" >JavaScript를 조금 더 깊게 이해하기 위해 작업한 프로젝트 입니다.</p>
