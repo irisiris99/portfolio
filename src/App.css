@@ -457,7 +457,8 @@ p {
 
 .contact-title {
   width: 100%;
-  padding: 8% 0%;
+  padding-top: 7%;
+  padding-bottom: 3%;
 }
 
 .contact-title h1 {
@@ -467,6 +468,9 @@ p {
   padding: 2% 1%;
   text-align: center;
   font-family: "Josefin Slab", serif;
+  background: linear-gradient(to right, #cc99ff 20%, #ffff99, #ff99cc 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact-title h2 {
@@ -477,6 +481,7 @@ p {
 
 .contact-title div {
   padding-top: 5%;
+  padding-left: 1%;
 }
 
 .contact-title div h2 {
