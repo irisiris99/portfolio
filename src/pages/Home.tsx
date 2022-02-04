@@ -28,7 +28,7 @@ function Home() {
       <Particles />
       <div className="navbar">
 				<div className="navbar_logo">
-					<a href="#">KimMeyongRae</a>
+					<a href="#">KimMyeongRae</a>
 				</div>
 				<a className="navbar__availability--link">
             <div className="navbar__availability">
