@@ -715,6 +715,18 @@ p {
     padding: 10% 0%;
   }
 
+  .contact-title h1 {
+    font-size: 40px;
+  }
+
+  .contact-title h2 {
+    font-size: 20px;
+  }
+
+  .contact-title div h2 {
+    font-size: 20px;
+  }
+
   .contact-icons {
     display: flex;
     flex-direction: column;
