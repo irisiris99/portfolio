@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Source+Sans+Pro&family=Source+Serif+4&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 
 * {
   margin: 0;
@@ -449,8 +450,38 @@ p {
 }
 
 /* ============ Contact =========== */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@200&display=swap");
+.Contact {
+  width: 100%;
+}
+
+.contact-title {
+  width: 100%;
+  padding: 8% 0%;
+}
+
 .contact-title h1 {
-  text-shadow: 3px 3px 4px blueviolet;
+  width: 100%;
+  font-size: 6vw;
+  letter-spacing: 1.5vw;
+  padding: 2% 1%;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+}
+
+.contact-title h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.contact-title div {
+  padding-top: 5%;
+}
+
+.contact-title div h2 {
+  font-size: 1.5vw;
+  padding: 10px 0px;
 }
 
 .contact-icons {

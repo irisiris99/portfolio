@@ -289,7 +289,7 @@ const ContactContent = forwardRef<any>((props, ref) => {
 		};
 	}, []);
   return (
-    <div className="Portfolio">
+    <div className="Contact">
       <div className="transition-text" style={{
             transform : `translateX(${position / 5}px)` ,
           }}>
@@ -339,24 +339,14 @@ const ContactContent = forwardRef<any>((props, ref) => {
         <h4>CONTACT</h4>
       </div>
       <div className="contact-title"ref={ref}>
-        <h1>KIM MEYONG RAE</h1>
-      </div>
-      <div className="contact-icons">
+        <h1>WEB</h1>
+        <h1>DEVELOPER</h1>
+        <h2>Newcomer　|　Front-End</h2>
         <div>
-          <img src="imgs/emailicon.png" alt="github" />
-          <p>{email}</p>
+          <h2>{phone}</h2>
+          <h2>{email}</h2>
+          <h2>{github}</h2>
         </div>
-        <div>
-          <img src="imgs/phoneicon.png" alt="Phone" />
-          <p>{phone}</p>
-        </div>
-        <div>
-          <img src="imgs/github2.png" alt="github" />
-          <p>{github}</p>
-        </div>
-      </div>
-      <div className="contact-end">
-        <h2>《　Thank for watching My Portfolio　》</h2>
       </div>
     </div>
   )
