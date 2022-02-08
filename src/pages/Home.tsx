@@ -143,7 +143,7 @@ const AboutContent = forwardRef<any>((props, ref) => {
         </div>
         <div className="profile">
           <div className="profile-img">
-            <img src="imgs/kmr.jpg"></img>
+            <img src="imgs/kmr3.jpg"></img>
           </div>
           <div className="profile-text">
             <div>
