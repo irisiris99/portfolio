@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useRef, forwardRef, useState } from 'react';
+import React, {useEffect, useRef, forwardRef, useState } from 'react';
 import Particles from '../component/Particles';
 import Slider from '../component/Slider';
 import { useSelector } from 'react-redux';
@@ -274,9 +274,9 @@ const PortfolioContent = forwardRef<any>((props, ref) => {
 
 const ContactContent = forwardRef<any>((props, ref) => {
 
-  const phone = useSelector((state) => state[3])
-  const github = useSelector((state) => state[4])
-  const email = useSelector((state) => state[5])
+  const phone :string = useSelector((state) => state[3])
+  const github :string = useSelector((state) => state[4])
+  const email :string = useSelector((state) => state[5])
 
   const [position, setPosition] = useState(0);
 	function onScroll() {
