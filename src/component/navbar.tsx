@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useRef } from 'react';
 
 function Navbar() {
 
