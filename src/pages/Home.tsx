@@ -67,7 +67,7 @@ const HomeContent = forwardRef<any>((props, ref) => {
       <div className="Home-title">
         <h1 id="Welcome">WELCOME TO</h1>
         <h1 id="My">MY PORTFOLIO</h1>
-        <h1 id="January">2022 JANUARY PROJECT</h1>
+        <h1 id="January">2022 PORTFOLIO PROJECT</h1>
       </div>
       <div className="Home-title2">
         <h2>#FRONT-END</h2>
