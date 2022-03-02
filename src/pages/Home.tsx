@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, forwardRef, useState } from 'react';
+import { useEffect, useRef, forwardRef, useState } from 'react';
 import Particles from '../component/Particles';
 import Slider from '../component/Slider';
 import { useSelector } from 'react-redux';
@@ -7,55 +7,55 @@ import { useSelector } from 'react-redux';
 function Home() {
 
   const homeRef = useRef<HTMLDivElement>(null);
-	const onHomeClick = () => {
-		homeRef.current?.scrollIntoView({ behavior: 'smooth' });
-			};
-	const aboutRef = useRef<HTMLDivElement>(null);
-	const onAboutClick = () => {
-		aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
-			};
-	const portRef = useRef<HTMLDivElement>(null);
-	const onPortClick = () => {
-		portRef.current?.scrollIntoView({ behavior: 'smooth' });
-			};
-	const contactRef = useRef<HTMLDivElement>(null);
-	const onContactClick = () => {
-		contactRef.current?.scrollIntoView({ behavior: 'smooth' });
-			};
+  const onHomeClick = () => {
+    homeRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const onAboutClick = () => {
+    aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const portRef = useRef<HTMLDivElement>(null);
+  const onPortClick = () => {
+    portRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+  const contactRef = useRef<HTMLDivElement>(null);
+  const onContactClick = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="Home">
       <Particles />
       <div className="navbar">
-				<div className="navbar_logo">
-					<a href="#">KimMyeongRae</a>
-				</div>
-				<a className="navbar__availability--link">
-            <div className="navbar__availability">
-                <p>
-                    WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
-                    WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
-                    WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
-                </p>
-                <p>
-                    WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
-                    WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
-                    WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
-                </p>
-            </div>
+        <div className="navbar_logo">
+          <a href="#">KimMyeongRae</a>
+        </div>
+        <a className="navbar__availability--link">
+          <div className="navbar__availability">
+            <p>
+              WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
+              WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
+              WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
+            </p>
+            <p>
+              WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
+              WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
+              WELCOME TO MY PORTFOLIO <span className="dot"></span>&nbsp;&nbsp;
+            </p>
+          </div>
         </a>
-				<ul>
-					<button onClick={onHomeClick}><p>HOME</p></button>
-					<button onClick={onAboutClick}><p>ABOUT</p></button>
-					<button onClick={onPortClick}><p>PORTFOLIO</p></button>
-					<button onClick={onContactClick}><p>CONTACT</p></button>
-				</ul>
-    	</div>
-      <HomeContent ref={homeRef}/>
-      <AboutContent ref={aboutRef}/>
-      <PortfolioContent ref={portRef}/>
+        <ul>
+          <button onClick={onHomeClick}><p>HOME</p></button>
+          <button onClick={onAboutClick}><p>ABOUT</p></button>
+          <button onClick={onPortClick}><p>PORTFOLIO</p></button>
+          <button onClick={onContactClick}><p>CONTACT</p></button>
+        </ul>
+      </div>
+      <HomeContent ref={homeRef} />
+      <AboutContent ref={aboutRef} />
+      <PortfolioContent ref={portRef} />
       <Slider />
-      <ContactContent ref={contactRef}/>
+      <ContactContent ref={contactRef} />
     </div>
   );
 }
@@ -78,29 +78,30 @@ const HomeContent = forwardRef<any>((props, ref) => {
         <img src="imgs/title_logo.png"></img>
       </div>
     </div>
-)});
+  )
+});
 
 const AboutContent = forwardRef<any>((props, ref) => {
   const [position, setPosition] = useState(0);
-	function onScroll() {
-		setPosition(window.scrollY);
-	}
-	useEffect(() => {
-		window.addEventListener("scroll", onScroll);
-		return () => {
-			window.removeEventListener("scroll", onScroll);
-		};
-	}, []);
+  function onScroll() {
+    setPosition(window.scrollY);
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
 
-  const age = useSelector((state)=>state[0])
-  const nationality = useSelector((state)=>state[1])
-  const adress = useSelector((state)=>state[2])
+  const age = useSelector((state) => state[0])
+  const nationality = useSelector((state) => state[1])
+  const adress = useSelector((state) => state[2])
 
   return (
     <div className="About">
       <div className="transition-text" style={{
-            transform : `translateX(${position / 5}px)` ,
-          }}>
+        transform: `translateX(${position / 5}px)`,
+      }}>
         <p>2022 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
         <p>2022 PORTFOLIO</p>
@@ -119,11 +120,11 @@ const AboutContent = forwardRef<any>((props, ref) => {
         <h4>KIM MYEONG RAE</h4>
         <p>2022 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        
+
       </div>
       <div id="position-left" className="transition-text2" style={{
-            transform : `translateX(-${position / 5}px)` ,
-          }}>
+        transform: `translateX(-${position / 5}px)`,
+      }}>
         <p>2022 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
         <p>2022 PORTFOLIO</p>
@@ -198,29 +199,30 @@ const AboutContent = forwardRef<any>((props, ref) => {
             <img src="imgs/react.png" alt="React_icon" />
             <p>React</p>
           </div>
-          
+
         </div>
       </div>
     </div>
-)});
+  )
+});
 
 
 const PortfolioContent = forwardRef<any>((props, ref) => {
   const [position, setPosition] = useState(0);
-	function onScroll() {
-		setPosition(window.scrollY);
-	}
-	useEffect(() => {
-		window.addEventListener("scroll", onScroll);
-		return () => {
-			window.removeEventListener("scroll", onScroll);
-		};
-	}, []);
+  function onScroll() {
+    setPosition(window.scrollY);
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
   return (
     <div className="Portfolio">
       <div className="transition-text" style={{
-            transform : `translateX(${position / 5}px)` ,
-          }}>
+        transform: `translateX(${position / 5}px)`,
+      }}>
         <p>ABOUT ME</p>
         <h4>MY PROJECTS</h4>
         <p>ABOUT ME</p>
@@ -243,11 +245,11 @@ const PortfolioContent = forwardRef<any>((props, ref) => {
         <h4>MY PROJECTS</h4>
         <p>ABOUT ME</p>
         <h4>MY PROJECTS</h4>
-        
+
       </div>
       <div className="transition-text2" style={{
-            transform : `translateX(-${position / 5}px)` ,
-          }}>
+        transform: `translateX(-${position / 5}px)`,
+      }}>
         <p>ABOUT ME</p>
         <h4>MY PROJECTS</h4>
         <p>ABOUT ME</p>
@@ -274,25 +276,25 @@ const PortfolioContent = forwardRef<any>((props, ref) => {
 
 const ContactContent = forwardRef<any>((props, ref) => {
 
-  const phone :string = useSelector((state) => state[3])
-  const github :string = useSelector((state) => state[4])
-  const email :string = useSelector((state) => state[5])
+  const phone: string = useSelector((state) => state[3])
+  const github: string = useSelector((state) => state[4])
+  const email: string = useSelector((state) => state[5])
 
   const [position, setPosition] = useState(0);
-	function onScroll() {
-		setPosition(window.scrollY);
-	}
-	useEffect(() => {
-		window.addEventListener("scroll", onScroll);
-		return () => {
-			window.removeEventListener("scroll", onScroll);
-		};
-	}, []);
+  function onScroll() {
+    setPosition(window.scrollY);
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, []);
   return (
     <div className="Contact">
       <div className="transition-text" style={{
-            transform : `translateX(${position / 5}px)` ,
-          }}>
+        transform: `translateX(${position / 5}px)`,
+      }}>
         <p>MY PROJECT</p>
         <h4>CONTACT</h4>
         <p>MY PROJECT</p>
@@ -317,8 +319,8 @@ const ContactContent = forwardRef<any>((props, ref) => {
         <h4>CONTACT</h4>
       </div>
       <div className="transition-text2" style={{
-            transform : `translateX(-${position / 5}px)` ,
-          }}>
+        transform: `translateX(-${position / 5}px)`,
+      }}>
         <p>MY PROJECT</p>
         <h4>CONTACT</h4>
         <p>MY PROJECT</p>
@@ -338,7 +340,7 @@ const ContactContent = forwardRef<any>((props, ref) => {
         <p>MY PROJECT</p>
         <h4>CONTACT</h4>
       </div>
-      <div className="contact-title"ref={ref}>
+      <div className="contact-title" ref={ref}>
         <h1>WEB</h1>
         <h1>DEVELOPER</h1>
         <h2>Newcomer　|　Front-End</h2>
