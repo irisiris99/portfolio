@@ -168,13 +168,13 @@ const AboutContent = forwardRef<any>((props, ref) => {
               <h6>　{adress}</h6>
             </div>
             <div className="padding-top">
-              <h3># 집중력 ( Concentration  )</h3>
+              <h3># 집중력</h3>
             </div>
             <div>
-              <h3># 성장 가능성 ( Growth Potential )</h3>
+              <h3># 성장 가능성</h3>
             </div>
             <div>
-              <h3># 문제해결 능력 ( Problem-Solving Ability )</h3>
+              <h3># 문제해결 능력</h3>
             </div>
           </div>
         </div>
