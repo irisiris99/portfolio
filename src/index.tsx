@@ -11,7 +11,7 @@ import ScrollTop from './component/Scrolltop';
 // About
 const age:string = '26 Years';
 const nationality:string = 'South Korea';
-const adress:string = '경기도 안산시 단원구';
+const adress:string = '서울특별시 서초구';
 
 // Contact
 const phone:string = '0 1 0 - 6 8 5 0 - 5 6 0 7';
