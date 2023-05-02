@@ -9,13 +9,13 @@ import { BrowserRouter } from 'react-router-dom';
 import ScrollTop from './component/Scrolltop';
 
 // About
-const age:string = '26 Years';
+const age:string = '27 Years';
 const nationality:string = 'South Korea';
-const adress:string = '서울특별시 서초구';
+const adress:string = '서울특별시 용산구';
 
 // Contact
 const phone:string = '0 1 0 - 6 8 5 0 - 5 6 0 7';
-const github:string = 'https://www.github.com/irisiris99';
+const github:string = 'https://www.github.com/IRIS97xD';
 const email:string = 'c j g 0 3 1 1 7 @ g m a i l . c o m';
 
 function reducer(state = [age, nationality, adress, phone, github, email]){
