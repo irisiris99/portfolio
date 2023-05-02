@@ -72,7 +72,7 @@ const HomeContent = forwardRef<any>((props, ref) => {
       <div className="Home-title2">
         <h2>#FRONT-END</h2>
         <h2>#WEB DEVELOPER</h2>
-        <h2>#IRIS99</h2>
+        <h2>#IRIS97xD</h2>
       </div>
       <div className="title-box">
         <img src="imgs/title_logo.png"></img>
@@ -102,40 +102,40 @@ const AboutContent = forwardRef<any>((props, ref) => {
       <div className="transition-text" style={{
         transform: `translateX(${position / 5}px)`,
       }}>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
 
       </div>
       <div id="position-left" className="transition-text2" style={{
         transform: `translateX(-${position / 5}px)`,
       }}>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
-        <p>2022 PORTFOLIO</p>
+        <p>2023 PORTFOLIO</p>
         <h4>KIM MYEONG RAE</h4>
       </div>
       <div className="About-Me" ref={ref}>
